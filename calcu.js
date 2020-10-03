@@ -1,18 +1,18 @@
 function getHistory(){
 	return document.getElementById("history-value").innerText;
 }
-function printHistory(num){
-	document.getElementById("history-value").innerText=num;
+function printHistory(n){
+	document.getElementById("history-value").innerText=n;
 }
 function getOutput(){
 	return document.getElementById("output-value").innerText;
 }
-function printOutput(num){
-	if(num==""){
-		document.getElementById("output-value").innerText=num;
+function printOutput(n){
+	if(n==""){
+		document.getElementById("output-value").innerText=n;
 	}
 	else{
-		document.getElementById("output-value").innerText=getFormattedNumber(num);
+		document.getElementById("output-value").innerText=getFormattedNumber(n);
 	}	
 }
 function getFormattedNumber(num){
